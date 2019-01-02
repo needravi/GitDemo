@@ -10,10 +10,14 @@ import org.testng.Assert;
 
 public class Cartpage 
 {
-	static {
+	static 
+	{
+		
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 	}
-	public static void main(String[] args) throws Exception {
+	
+	public static void main(String[] args) throws Exception 
+	{
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
