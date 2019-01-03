@@ -1,7 +1,7 @@
 package GitDemo;
 
-import java.util.concurrent.TimeUnit;
 
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,11 +11,12 @@ import org.testng.Assert;
 
 public class Kadas 
 {
-	static {
+	static 
+	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 	}
-	public static void main(String[] args) throws Exception {
-		
+	public static void main(String[] args) throws Exception 
+	{		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -43,7 +44,6 @@ public class Kadas
 		System.out.println("Error msg displayed correctly");
 		driver.close();
 	}
-
 }
 
 /* o/p  Welcome displayed correctly
